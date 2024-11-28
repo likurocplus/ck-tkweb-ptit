@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="text-white bg-[#FBBE36]">
+      <nav
+        class="container mx-auto flex justify-between items-center font-oswald"
+      >
+        <!-- Left Side - Navigation Links -->
+        <ul class="hidden md:flex space-x-10">
+          <li>
+            <a
+              href="./home.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li>
+            <a
+              href="./menu.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >MENU</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >VỀ CHÚNG TÔI</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >ĐỊA CHỈ</a
+            >
+          </li>
+        </ul>
+
+        <!-- Center Logo -->
+        <a href="./home.html" class="hidden md:block">
+          <img src="../images/logo1.svg" alt="" />
+        </a>
+
+        <!-- Right Side  -->
+        <ul class="hidden md:flex space-x-10 items-center">
+          <li>
+            <a
+              href="./store.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >CỬA HÀNG</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >LIÊN HỆ</a
+            >
+          </li>
+          <li>
+            <a href="./cart.html">
+              <img src="../images/cart-icon-white.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <button
+              class="bg-[#CE362C] p-2 rounded-3xl px-4 hover:bg-[#FBBE36]"
+            >
+              ĐẶT HÀNG ONLINE
+            </button>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden w-full flex items-center justify-between">
+          <img src="../images/logo1.svg" alt="" />
+        </div>
+
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="md:hidden flex items-center justify-between p-2 w-24 h-24"
+        >
+          <img src="../images/menu-mobile.svg" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+    <!-- Hero  -->
+    <main class="mx-auto w-full">
+      <!-- Hero 1  -->
+      <section>
+        <div class="bg-[#FBBE36] py-24">
+          <p class="font-paytone text-4xl text-white text-center block">
+            VỀ CHÚNG TÔI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </section>
+      <!-- Hero 2  -->
+      <section>
+        <!-- Text  -->
+        <div class="bg-white py-10 space-y-10">
+          <div
+            class="container mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4 items-center"
+          >
+            <!-- Image Left -->
+            <div class="hidden md:block">
+              <img src="../images/banner6.svg" alt="Banner Left" />
+            </div>
+
+            <!-- Text Center -->
+            <div
+              class="text-center space-y-6 z-10 shadow-2xl rounded-2xl p-8 bg-white col-span-2 md:col-span-2"
+            >
+              <p class="font-sriracha text-2xl text-[#CE362C]">
+                CHÚNG TÔI LÀ AI
+              </p>
+              <p class="font-paytone text-3xl text-black">
+                Ý TƯỞNG & TRUYỀN THỐNG<br />
+                BURGER TỐT NHẤT THẾ GIỚI
+              </p>
+              <p class="font-patrick text-gray-600">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div>
+                <button
+                  class="flex justify-center items-center py-3 px-6 rounded-full shadow-md hover:shadow-xl bg-[#CE362C] text-white mx-auto"
+                >
+                  <img src="../images/plus-icon.svg" alt="Plus Icon" />
+                  <span class="pl-3 font-oswald">ĐỌC THÊM</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Image Right -->
+            <div class="col-span-1">
+              <img src="../images/banner7.svg" alt="Banner Right" />
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="md:hidden col-span-1">
+              <img src="../images/banner6.svg" alt="Banner Mobile" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero 2  -->
+      <section>
+        <div class="bg-white">
+          <div class="container flex justify-center items-center py-24">
+            <img
+              class="w-full md:w-2/3 h-auto"
+              src="../images/banner8.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero 3  -->
+      <section>
+        <div
+          class="bg-white py-24"
+          style="
+            background-image: url(../images/background3.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <!-- Text  -->
+          <div class="text-center space-y-4 z-10 pb-24">
+            <p class="font-sriracha text-2xl text-[#CE362C]">Đội ngũ đầu bếp</p>
+            <p class="font-paytone text-3xl text-black">
+              Phía sau những
+              <span class="text-yellow-300"> món ăn ngon</span>
+            </p>
+          </div>
+          <!-- List Chief  -->
+          <div class="container grid grid-cols-1 md:grid-cols-4">
+            <div
+              class="col-span-1 p-10 bg-[#FFF0DA] mx-auto space-y-6 text-center flex flex-col justify-center items-center"
+            >
+              <img src="../images/chief1.svg" alt="" />
+              <p class="font-paytone text-black text-xl">Sofia Richie</p>
+              <p class="font-patrick text-gray-400">Chief</p>
+              <div class="flex space-x-4">
+                <img src="../images/x-icon-white.svg" alt="" />
+                <img src="../images/face-icon-white.svg" alt="" />
+                <img src="../images/ig-icon-white.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-span-1 p-10 bg-[#FFF0DA] mx-auto space-y-6 text-center flex flex-col justify-center items-center"
+            >
+              <img src="../images/chief2.svg" alt="" />
+              <p class="font-paytone text-black text-xl">Harvey Dent</p>
+              <p class="font-patrick text-gray-400">Chief</p>
+              <div class="flex space-x-4">
+                <img src="../images/x-icon-white.svg" alt="" />
+                <img src="../images/face-icon-white.svg" alt="" />
+                <img src="../images/ig-icon-white.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-span-1 p-10 bg-[#FFF0DA] mx-auto space-y-6 text-center flex flex-col justify-center items-center"
+            >
+              <img src="../images/chief3.svg" alt="" />
+              <p class="font-paytone text-black text-xl">Emilia Clarke</p>
+              <p class="font-patrick text-gray-400">Chief</p>
+              <div class="flex space-x-4">
+                <img src="../images/x-icon-white.svg" alt="" />
+                <img src="../images/face-icon-white.svg" alt="" />
+                <img src="../images/ig-icon-white.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-span-1 p-10 bg-[#FFF0DA] mx-auto space-y-6 text-center flex flex-col justify-center items-center"
+            >
+              <img src="../images/chief4.svg" alt="" />
+              <p class="font-paytone text-black text-xl">Sam Claflin</p>
+              <p class="font-patrick text-gray-400">Chief</p>
+              <div class="flex space-x-4">
+                <img src="../images/x-icon-white.svg" alt="" />
+                <img src="../images/face-icon-white.svg" alt="" />
+                <img src="../images/ig-icon-white.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="bg-white py-12 space-y-8"
+        style="
+          background-image: url(../images/background1.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container">
+          <img class="mx-auto" src="../images/logo2.svg" alt="" />
+        </div>
+        <div class="container">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center"
+          >
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐỊA CHỈ</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  778/10 Nguyễn Kiệm, Quận Phú Nhuận, TP HCM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">GIỜ MỞ CỬA</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Thứ 2 - Chủ Nhật <br />10:00 AM - 11:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐẶT BÀN</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Hotline:<br /><span class="font-paytone text-yellow-600"
+                    >0392 012 998</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">MẠNG XÃ HỘI</p>
+                <div class="flex justify-center items-center">
+                  <img src="../images/x-icon.svg" alt="" />
+                  <img src="../images/face-icon.svg" alt="" />
+                  <img src="../images/youtube-icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

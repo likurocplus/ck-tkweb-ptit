@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="text-white bg-[#FBBE36]">
+      <nav
+        class="container mx-auto flex justify-between items-center font-oswald"
+      >
+        <!-- Left Side - Navigation Links -->
+        <ul class="hidden md:flex space-x-10">
+          <li>
+            <a
+              href="./home.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li>
+            <a
+              href="./menu.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >MENU</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >VỀ CHÚNG TÔI</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >ĐỊA CHỈ</a
+            >
+          </li>
+        </ul>
+
+        <!-- Center Logo -->
+        <a href="./home.html" class="hidden md:block">
+          <img src="../images/logo1.svg" alt="" />
+        </a>
+
+        <!-- Right Side  -->
+        <ul class="hidden md:flex space-x-10 items-center">
+          <li>
+            <a
+              href="./store.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >CỬA HÀNG</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >LIÊN HỆ</a
+            >
+          </li>
+          <li>
+            <a href="./cart.html">
+              <img src="../images/cart-icon-white.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <button
+              class="bg-[#CE362C] p-2 rounded-3xl px-4 hover:bg-[#FBBE36]"
+            >
+              ĐẶT HÀNG ONLINE
+            </button>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden w-full flex items-center justify-between">
+          <img src="../images/logo1.svg" alt="" />
+        </div>
+
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="md:hidden flex items-center justify-between p-2 w-24 h-24"
+        >
+          <img src="../images/menu-mobile.svg" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+    <!-- Hero  -->
+    <main class="mx-auto w-full">
+      <!-- Hero 1  -->
+      <section>
+        <div class="bg-[#FBBE36] py-24">
+          <p class="font-paytone text-4xl text-white text-center block">
+            LIÊN HỆ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </section>
+      <!-- Hero 2  -->
+      <section>
+        <div class="container grid grid-cols-1 md:grid-cols-3 py-24">
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl h-60"
+            >
+              <p class="font-paytone text-2xl">LIÊN HỆ VỚI CHÚNG TÔI</p>
+              <div
+                class="flex justify-center items-center font-oswald text-[#CE362C] text-xl"
+              >
+                <img src="../images/phone-icon.svg" alt="" />
+                <p class="font-bold">0392 012 998</p>
+              </div>
+              <div>
+                <p class="font-patrick">Tel: 0977 211 136</p>
+                <p class="font-patrick">Email: nguyenphuongvyds@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl h-60"
+            >
+              <img
+                class="w-10 h-auto mx-auto"
+                src="../images/diachi-icon.svg"
+                alt=""
+              />
+              <p class="font-paytone text-2xl">ĐỊA CHỈ</p>
+              <p class="font-patrick">778/10 Nguyễn Kiệm, Phú Nhuận, TP HCMN</p>
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl font-patrick h-60"
+            >
+              <p class="font-paytone text-2xl">GIỜ MỞ CỬA</p>
+              <div class="flex justify-around">
+                <p>Thứ 2 - Thứ 6</p>
+                <p>9:00 - 20:00</p>
+              </div>
+              <div class="flex justify-around">
+                <p>Thứ 2 - Thứ 6</p>
+                <p>9:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero 3  -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 py-24">
+        <div class="col-span-1">
+          <form action="">
+            <p class="font-paytone text-2xl mb-5">HÒM THƯ GÓP Ý</p>
+
+            <div class="mb-5">
+              <input
+                type="text"
+                class="border font-patrick border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Họ & tên"
+              />
+            </div>
+            <div class="mb-5">
+              <input
+                type="text"
+                class="border font-patrick border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-5">
+              <input
+                type="text"
+                class="border font-patrick border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Số điện thoại"
+              />
+            </div>
+            <div class="mb-5">
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full text-sm font-patrick text-gray- rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Lời nhắn"
+              ></textarea>
+            </div>
+            <button
+              class="bg-[#CE362C] py-1 px-5 rounded-3xl hover:bg-[#FBBE36] text-white font-oswald"
+            >
+              GỬI
+            </button>
+          </form>
+        </div>
+        <div class="col-span-1">
+          <img class="w-full h-auto p-10" src="../images/map.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        class="bg-white py-12 space-y-8"
+        style="
+          background-image: url(../images/background1.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container">
+          <img class="mx-auto" src="../images/logo2.svg" alt="" />
+        </div>
+        <div class="container">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center"
+          >
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐỊA CHỈ</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  778/10 Nguyễn Kiệm, Quận Phú Nhuận, TP HCM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">GIỜ MỞ CỬA</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Thứ 2 - Chủ Nhật <br />10:00 AM - 11:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐẶT BÀN</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Hotline:<br /><span class="font-paytone text-yellow-600"
+                    >0392 012 998</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">MẠNG XÃ HỘI</p>
+                <div class="flex justify-center items-center">
+                  <img src="../images/x-icon.svg" alt="" />
+                  <img src="../images/face-icon.svg" alt="" />
+                  <img src="../images/youtube-icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

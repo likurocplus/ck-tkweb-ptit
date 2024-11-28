@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="text-white bg-[#FBBE36]">
+      <nav
+        class="container mx-auto flex justify-between items-center font-oswald"
+      >
+        <!-- Left Side - Navigation Links -->
+        <ul class="hidden md:flex space-x-10">
+          <li>
+            <a
+              href="./home.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >TRANG CHỦ</a
+            >
+          </li>
+          <li>
+            <a
+              href="./menu.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >MENU</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >VỀ CHÚNG TÔI</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >ĐỊA CHỈ</a
+            >
+          </li>
+        </ul>
+
+        <!-- Center Logo -->
+        <a href="./home.html" class="hidden md:block">
+          <img src="../images/logo1.svg" alt="" />
+        </a>
+
+        <!-- Right Side  -->
+        <ul class="hidden md:flex space-x-10 items-center">
+          <li>
+            <a
+              href="./store.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >CỬA HÀNG</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="hover:underline hover:decoration-2 hover:underline-offset-2 font-normal hover:text-[#CE362C]"
+              >LIÊN HỆ</a
+            >
+          </li>
+          <li>
+            <a href="./cart.html">
+              <img src="../images/cart-icon-white.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <button
+              class="bg-[#CE362C] p-2 rounded-3xl px-4 hover:bg-[#FBBE36]"
+            >
+              ĐẶT HÀNG ONLINE
+            </button>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden w-full flex items-center justify-between">
+          <img src="../images/logo1.svg" alt="" />
+        </div>
+
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="md:hidden flex items-center justify-between p-2 w-24 h-24"
+        >
+          <img src="../images/menu-mobile.svg" alt="Menu" />
+        </button>
+      </nav>
+    </header>
+    <!-- Hero  -->
+    <main class="mx-auto w-full">
+      <!-- Hero 1  -->
+      <section>
+        <div class="bg-[#FBBE36] py-24">
+          <p class="font-paytone text-4xl text-white text-center block">
+            GIỎ HÀNG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </section>
+      <!-- Hero 2 -->
+      <section>
+        <div class="container mx-auto px-4 shadow-2xl my-24 pt-10">
+          <!-- Table Wrapper -->
+          <div class="overflow-x-auto">
+            <table
+              class="table-auto border-collapse w-full text-center border border-gray-300"
+            >
+              <!-- Table Head -->
+              <thead>
+                <tr class="font-oswald">
+                  <th class="border border-gray-300 px-4 py-2"></th>
+                  <th class="border border-gray-300 px-4 py-2">MÓN ĂN</th>
+                  <th class="border border-gray-300 px-4 py-2">GIÁ</th>
+                  <th class="border border-gray-300 px-4 py-2">SỐ LƯỢNG</th>
+                  <th class="border border-gray-300 px-4 py-2">THÀNH TIỀN</th>
+                </tr>
+              </thead>
+
+              <!-- Table Body -->
+              <tbody>
+                <tr>
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-red-500 cursor-pointer"
+                  >
+                    <img
+                      class="mx-auto"
+                      src="../images/tick-x-icon.svg"
+                      alt=""
+                    />
+                  </td>
+                  <!-- Food Details -->
+                  <td
+                    class="border border-gray-300 px-4 py-2 flex items-center space-x-4"
+                  >
+                    <img
+                      src="../images/prod11.svg"
+                      alt="Food Image"
+                      class="w-12 h-12 object-cover"
+                    />
+                    <span class="text-red-600 font-patrick"
+                      >Burger Bò Nướng Whopper</span
+                    >
+                  </td>
+                  <!-- Price -->
+                  <td class="border border-gray-300 px-4 py-2 font-patrick">
+                    105.000 VNĐ
+                  </td>
+                  <!-- Quantity -->
+                  <td class="border border-gray-300 px-4 py-2 font-patrick">
+                    1
+                  </td>
+                  <!-- Total -->
+                  <td
+                    class="border border-gray-300 px-4 py-2 text-red-600 font-bold font-patrick"
+                  >
+                    105.000 VNĐ
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Discount & Action Buttons -->
+          <div class="flex justify-between items-center mt-6">
+            <!-- Discount Input -->
+            <div class="flex space-x-2">
+              <input
+                type="text"
+                placeholder="Mã giảm giá"
+                class="border font-patrick border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-red-400"
+              />
+              <button
+                class="bg-[#CE362C] text-white px-6 py-2 rounded-3xl hover:bg-[#FBBE36] font-oswald"
+              >
+                ÁP DỤNG
+              </button>
+            </div>
+
+            <!-- Member Button -->
+            <button
+              class="bg-[#CE362C] text-white px-6 py-2 rounded-3xl hover:bg-[#FBBE36] font-oswald"
+            >
+              THẺ THÀNH VIÊN
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 mx-auto">
+            <div class="hidden md:block md:col-span-1"></div>
+
+            <!-- Payment Information -->
+            <div class="col-span-1 font-oswald space-y-6">
+              <!-- Title -->
+              <p class="text-3xl font-bold text-gray-800">Thanh toán</p>
+
+              <!-- Payment Details -->
+              <div class="space-y-4">
+                <!-- Subtotal -->
+                <div class="flex justify-between items-center text-gray-600">
+                  <p class="text-lg">Tạm tính</p>
+                  <p class="text-lg font-semibold">105.000 VNĐ</p>
+                </div>
+
+                <!-- Shipping Fee -->
+                <div class="flex justify-between items-start text-gray-600">
+                  <p class="text-lg">Phí giao hàng</p>
+                  <div class="text-right">
+                    <p class="text-lg font-semibold">35.000 VNĐ</p>
+                    <p class="text-sm text-gray-500 mt-1">
+                      Đến 14/13 Thân Nhân Trung, Tân Bình, TP HCM
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Total -->
+                <div
+                  class="flex justify-between items-center text-gray-800 border-t border-gray-300 pt-4"
+                >
+                  <p class="text-xl font-bold">Tổng cộng</p>
+                  <p class="text-xl font-bold text-[#CE362C]">140.000 VNĐ</p>
+                </div>
+                <button
+                  class="bg-[#CE362C] py-2 px-6 rounded-3xl hover:bg-[#FBBE36] text-white font-oswald mx-auto block"
+                >
+                  THANH TOÁN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="bg-white py-12 space-y-8"
+        style="
+          background-image: url(../images/background1.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container">
+          <img class="mx-auto" src="../images/logo2.svg" alt="" />
+        </div>
+        <div class="container">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center"
+          >
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐỊA CHỈ</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  778/10 Nguyễn Kiệm, Quận Phú Nhuận, TP HCM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">GIỜ MỞ CỬA</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Thứ 2 - Chủ Nhật <br />10:00 AM - 11:00 PM
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">ĐẶT BÀN</p>
+                <p class="font-patrick text-gray-400 text-xl">
+                  Hotline:<br /><span class="font-paytone text-yellow-600"
+                    >0392 012 998</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div>
+                <p class="font-oswald text-2xl text-white">MẠNG XÃ HỘI</p>
+                <div class="flex justify-center items-center">
+                  <img src="../images/x-icon.svg" alt="" />
+                  <img src="../images/face-icon.svg" alt="" />
+                  <img src="../images/youtube-icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
