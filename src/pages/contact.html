@@ -105,6 +105,7 @@
       <!-- Hero 2  -->
       <section>
         <div class="container grid grid-cols-1 md:grid-cols-3 py-24">
+          <!-- Element 1 -->
           <div class="col-span-1">
             <div
               class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl h-60"
@@ -122,6 +123,7 @@
               </div>
             </div>
           </div>
+          <!-- Element 1 -->
           <div class="col-span-1">
             <div
               class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl h-60"
@@ -135,6 +137,7 @@
               <p class="font-patrick">778/10 Nguyễn Kiệm, Phú Nhuận, TP HCMN</p>
             </div>
           </div>
+          <!-- Element 1 -->
           <div class="col-span-1">
             <div
               class="flex flex-col text-center space-y-10 p-4 hover:shadow-2xl font-patrick h-60"
@@ -183,7 +186,7 @@
               <textarea
                 id="message"
                 rows="4"
-                class="block p-2.5 w-full text-sm font-patrick text-gray- rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block p-2.5 w-full text-sm font-patrick text-gray- rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Lời nhắn"
               ></textarea>
             </div>
@@ -255,5 +258,65 @@
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Ngăn không cho form gửi đi
+
+          const name = document
+            .querySelector('input[placeholder="Họ & tên"]')
+            .value.trim();
+          const email = document
+            .querySelector('input[placeholder="Email"]')
+            .value.trim();
+          const phone = document
+            .querySelector('input[placeholder="Số điện thoại"]')
+            .value.trim();
+          const message = document.querySelector("#message").value.trim();
+
+          // Regex patterns
+          const namePattern = /^[a-zA-Z]+$/; // Chỉ cho phép chữ cái và khoảng trắng
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Định dạng email
+          const phonePattern = /^[0-9]{9,11}$/; // Chỉ số, từ 9-11 ký tự
+
+          let isValid = true;
+
+          // Validate Name
+          if (!name || !namePattern.test(name)) {
+            alert(
+              "Vui lòng nhập Họ & tên hợp lệ (chỉ chứa chữ cái và khoảng trắng)."
+            );
+            isValid = false;
+          }
+
+          // Validate Email
+          if (!email || !emailPattern.test(email)) {
+            alert("Vui lòng nhập email hợp lệ.");
+            isValid = false;
+          }
+
+          // Validate Phone
+          if (!phone || !phonePattern.test(phone)) {
+            alert(
+              "Vui lòng nhập số điện thoại hợp lệ (chỉ chứa số, từ 9–11 ký tự)."
+            );
+            isValid = false;
+          }
+
+          // Validate Message
+          if (!message) {
+            alert("Vui lòng nhập lời nhắn.");
+            isValid = false;
+          }
+
+          // Nếu hợp lệ, gửi form
+          if (isValid) {
+            alert("Form được gửi thành công!");
+            // Thực hiện logic gửi form ở đây
+            // this.submit();
+          }
+        });
+    </script>
   </body>
 </html>
